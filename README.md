@@ -9,12 +9,13 @@ This project contains an ablation study using a residual neural network architec
 
 ## Neural Network Architectures
 
+### Overall structure
+
 <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
 
-test
+### ResNet Blocks variants without and with CBAM
 
-<img width="505" height="900" alt="Image" src="https://github.com/user-attachments/assets/1ab4c849-d367-4462-9e6b-4f7e480c167b" />
-<img width="389" height="451" alt="Image" src="https://github.com/user-attachments/assets/69948214-8d93-4995-b1a1-8e02e19353ed" />
+<img width="1012" height="953" alt="Image" src="https://github.com/user-attachments/assets/916d307e-caf4-481d-b5e9-8c0669568f7b" />
 
 ## Results
 
