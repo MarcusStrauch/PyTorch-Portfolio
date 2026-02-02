@@ -11,6 +11,10 @@ This project contains an ablation study using a residual neural network architec
 
 <img width="389" height="783" alt="Image" src="https://github.com/user-attachments/assets/d353c2af-3caa-45db-9634-95420348866f" />
 
+<img width="389" height="451" alt="Image" src="https://github.com/user-attachments/assets/69948214-8d93-4995-b1a1-8e02e19353ed" />
+
+<img width="486" height="563" alt="Image" src="https://github.com/user-attachments/assets/97350d1f-fac6-43a8-82ac-dc335bcdb09a" />
+
 ## Results
 
 <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
