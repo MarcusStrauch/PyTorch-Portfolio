@@ -97,6 +97,58 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
 ```
 </details>
 
+<details>
+<summary><strong> Classification Report, ResNet + CBAM</strong></summary>
+
+```text
+                                                    precision    recall  f1-score   support
+
+                                Apple, Apple scab       0.95      0.89      0.92        94
+                                 Apple, Black rot       0.96      0.97      0.96        93
+                          Apple, Cedar apple rust       0.95      1.00      0.98        41
+                                   Apple, healthy       1.00      0.87      0.93       246
+                               Blueberry, healthy       0.94      0.97      0.95       226
+           Cherry(including sour), Powdery mildew       0.96      0.98      0.97       158
+                  Cherry(including sour), healthy       0.97      0.95      0.96       128
+ Corn(maize), Cercospora leaf spot Gray leaf spot       0.72      0.87      0.79        77
+                        Corn(maize), Common rust        0.99      1.00      1.00       179
+                Corn(maize), Northern Leaf Blight       0.88      0.83      0.86       147
+                             Corn(maize), healthy       0.99      1.00      1.00       174
+                                 Grape, Black rot       0.96      0.87      0.91       177
+                      Grape, Esca (Black Measles)       0.97      0.99      0.98       207
+        Grape, Leaf blight (Isariopsis Leaf Spot)       0.93      1.00      0.96       162
+                                   Grape, healthy       0.94      1.00      0.97        64
+          Orange, Haunglongbing (Citrus greening)       1.00      0.94      0.97       826
+                            Peach, Bacterial spot       0.96      0.94      0.95       344
+                                   Peach, healthy       0.84      1.00      0.92        54
+                     Pepper, bell, Bacterial spot       0.88      1.00      0.93       150
+                            Pepper, bell, healthy       0.95      0.98      0.96       222
+                             Potato, Early blight       0.96      0.94      0.95       150
+                              Potato, Late blight       0.91      0.89      0.90       150
+                                  Potato, healthy       0.66      0.91      0.76        23
+                               Raspberry, healthy       0.95      0.96      0.95        55
+                                 Soybean, healthy       0.99      0.96      0.97       764
+                           Squash, Powdery mildew       1.00      0.99      0.99       275
+                          Strawberry, Leaf scorch       0.96      0.99      0.97       167
+                              Strawberry, healthy       0.91      1.00      0.95        68
+                           Tomato, Bacterial spot       0.89      0.96      0.92       319
+                             Tomato, Early blight       0.82      0.90      0.86       150
+                              Tomato, Late blight       0.94      0.80      0.87       287
+                                Tomato, Leaf Mold       0.96      0.97      0.96       143
+                       Tomato, Septoria leaf spot       0.96      0.97      0.97       265
+     Tomato, Spider mites Two-spotted spider mite       0.90      0.92      0.91       252
+                              Tomato, Target Spot       0.89      0.94      0.92       211
+            Tomato, Tomato Yellow Leaf Curl Virus       0.96      0.96      0.96       803
+                      Tomato, Tomato mosaic virus       0.75      1.00      0.85        56
+                                  Tomato, healthy       0.95      1.00      0.98       239
+
+                                          accuracy                           0.95      8146
+                                         macro avg       0.92      0.95      0.93      8146
+                                      weighted avg       0.95      0.95      0.95      8146
+
+```
+</details>
+
 <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
 
 ## References
