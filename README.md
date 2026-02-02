@@ -43,7 +43,20 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
 | ResNet | 0.91 | 0.88 | 0.91 |
 | ResNet + CBAM | **0.95** | **0.93** | **0.95** |
 
+<details>
+<summary><strong> Classification Report, ResNet (no CBAM)</strong></summary>
 
+```text
+precision    recall  f1-score   support
+
+Apple___Apple_scab       0.86      0.80      0.83        94
+Apple___Black_rot        0.84      0.94      0.88        93
+Apple___Cedar_apple_rust 0.95      1.00      0.98        41
+Apple___healthy          0.91      0.93      0.92       246
+
+
+```
+</details>
 
 <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
 
