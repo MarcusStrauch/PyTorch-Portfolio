@@ -2,8 +2,8 @@
 
 This project contains an ablation study using a residual neural network architecture with and without convolutional block attention modules as proposed by Woo, Sanghyun, et al. (2018) [[1]](#cbam). 
 
+## Technologies used
 <p align="center">
-  <h2 >Technologies used</h2>
   <img width="652" height="196" alt="Image" src="https://github.com/user-attachments/assets/c0cdd35e-dfc8-491f-a398-e83fd91eb955" />
 </p>
 
