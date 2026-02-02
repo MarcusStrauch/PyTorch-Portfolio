@@ -20,8 +20,8 @@ To perform the ablation study, a shared ResNet model architecture class was esta
 ### Overall structure
 
 <p align="center">
-  <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /><br>
-  <em><a id="fig1">Figure 1</a>: Shared ResNet model architecture with ablation study changes split into two paths.</em>
+  <a id="fig1"><img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /></a><br>
+  <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
 </p>
 
 The implementations of the ResNet blocks used in this study are shown in [fig. 2](#fig2), illustrating the data flow through the individual ResNet blocks and in the case of the CBAM-enabled version, the channel and spatial attention modules.
