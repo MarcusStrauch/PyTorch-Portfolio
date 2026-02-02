@@ -7,11 +7,25 @@ This project contains an ablation study using a residual neural network architec
   <img width="652" height="196" alt="Image" src="https://github.com/user-attachments/assets/c0cdd35e-dfc8-491f-a398-e83fd91eb955" />
 </p>
 
+## Data Augmentation
+
+Prior to model training, the data was split into training, validation, and testing sets. To reduce overfitting, the images data in the training dataset was augmented using transformations frequently used in computer vision, especially in medical multiclass classification tasks. This was achieved using a variety of random geometric and color transformations, as well as random blurring. 
+
+All images, including validation and test images were resized to 224x224 pixel formats, and normalized prior to model training.
+
 ## Neural Network Architectures
+
+To perform the ablation study, a shared ResNet model architecture class was established (), which differed only 
 
 ### Overall structure
 
-<img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
+<figure>
+  <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
+  <figcaption><em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em></figcaption>
+</figure>
+
+
+
 
 ### ResNet Blocks variants without and with CBAM
 
