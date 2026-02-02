@@ -9,7 +9,7 @@ This project contains an ablation study using a residual neural network architec
 
 ## Neural Network Architectures
 
-<img width="389" height="783" alt="Image" src="https://github.com/user-attachments/assets/d353c2af-3caa-45db-9634-95420348866f" />
+<img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
 
 <div>
   <img width="389" height="451" alt="Image" src="https://github.com/user-attachments/assets/69948214-8d93-4995-b1a1-8e02e19353ed" />
