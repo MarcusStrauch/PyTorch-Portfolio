@@ -15,33 +15,23 @@ All images, including validation and test images were resized to 224x224 pixel f
 
 ## Neural Network Architectures
 
-To perform the ablation study, a shared ResNet model architecture class was established (), which differed only 
+To perform the ablation study, a shared ResNet model architecture class was established as shown in [fig. 1](#fig1). For the model without CBAM, the corresponding channel and spatial attention modules of the ResNet blocks were turned off.
 
 ### Overall structure
 
-<figure>
-  <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
-  <figcaption><em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em></figcaption>
-</figure>
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" />
-      <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
-    </td>
-  </tr>
-</table>
-
 <p align="center">
   <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /><br>
-  <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
+  <em><a id="fig1">Figure 1</a>: Shared ResNet model architecture with ablation study changes split into two paths.</em>
 </p>
 
+The implementations of the ResNet blocks used in this study are shown in [fig. 2](#fig2), illustrating the data flow through the individual ResNet blocks and in the case of the CBAM-enabled version, the channel and spatial attention modules.
 
 ### ResNet Blocks variants without and with CBAM
 
-<img width="1012" height="953" alt="Image" src="https://github.com/user-attachments/assets/916d307e-caf4-481d-b5e9-8c0669568f7b" />
+<p align="center">
+  <img width="1012" height="953" alt="Image" src="https://github.com/user-attachments/assets/916d307e-caf4-481d-b5e9-8c0669568f7b" /><br>
+  <em><a id="fig2">Figure 2</a>: The two ResNet block architectures used in this study.</em>
+</p>
 
 ## Results
 
