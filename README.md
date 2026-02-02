@@ -19,20 +19,22 @@ To perform the ablation study, a shared ResNet model architecture class was esta
 
 ### Overall structure
 
-<p align="center">
-  <a id="fig1"><img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /></a><br>
-  <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
-</p>
+<a id="fig1">
+  <p align="center">
+    <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /><br>
+    <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
+  </p>
+</a>
 
 The implementations of the ResNet blocks used in this study are shown in [fig. 2](#fig2), illustrating the data flow through the individual ResNet blocks and in the case of the CBAM-enabled version, the channel and spatial attention modules.
 
 ### ResNet Blocks variants without and with CBAM
-
-<p align="center">
-  <img width="1012" height="953" alt="Image" src="https://github.com/user-attachments/assets/916d307e-caf4-481d-b5e9-8c0669568f7b" /><br>
-  <em><a id="fig2">Figure 2</a>: The two ResNet block architectures used in this study.</em>
-</p>
-
+<a id="fig2">
+  <p align="center">
+    <img width="1012" height="953" alt="Image" src="https://github.com/user-attachments/assets/916d307e-caf4-481d-b5e9-8c0669568f7b" /><br>
+    <em>Figure 2: The two ResNet block architectures used in this study.</em>
+  </p>
+</a>
 ## Results
 
 <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
