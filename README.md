@@ -35,7 +35,15 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
     <em>Figure 2: The two ResNet block architectures used in this study.</em>
   </p>
 </a>
+
 ## Results
+
+| Model | Accuracy | Macro F1 | Weighted F1 |
+|------|---------|----------|-------------|
+| ResNet | 0.91 | 0.88 | 0.91 |
+| ResNet + CBAM | **0.95** | **0.93** | **0.95** |
+
+
 
 <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
 
