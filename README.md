@@ -43,6 +43,8 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
 | ResNet | 0.91 | 0.88 | 0.91 |
 | ResNet + CBAM | **0.95** | **0.93** | **0.95** |
 
+### Classification reports for both model architectures: 
+
 <details>
 <summary><strong> Classification Report, ResNet (no CBAM)</strong></summary>
 
