@@ -1,4 +1,4 @@
-### PyTorch portfolio project by Marcus Strauch
+# PyTorch portfolio project by Marcus Strauch
 
 This project contains an ablation study using a residual neural network architecture with and without convolutional block attention modules as proposed by Woo, Sanghyun, et al. (2018) [[1]](#cbam). 
 
