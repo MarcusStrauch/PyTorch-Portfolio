@@ -36,6 +36,10 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
   </p>
 </a>
 
+## Model Training
+
+Using the architectures outlined above, one model of each type was trained, employing a batch size of 32, initial learning rate of 3 * 10^-4, a ReduceLROnPlateau scheduler with a patience of 3 and factor of 0.3 and a weight decay of 10^-4. The training was carried out for 10 epochs, using a weighted cross entropy loss function.
+
 ## Results and Discussion
 
 | Model | Accuracy | Macro F1 | Weighted F1 |
