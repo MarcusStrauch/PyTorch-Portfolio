@@ -7,9 +7,9 @@ This project contains an ablation study using a residual neural network architec
   <img width="652" height="196" alt="Image" src="https://github.com/user-attachments/assets/c0cdd35e-dfc8-491f-a398-e83fd91eb955" />
 </p>
 
-## Data Augmentation
+## Image Augmentation and Data Preparation
 
-Prior to model training, the data was split into training, validation, and testing sets. To reduce overfitting, the images data in the training dataset was augmented using transformations frequently used in computer vision, especially in medical multiclass classification tasks. This was achieved using a variety of random geometric and color transformations, as well as random blurring. 
+Prior to model training, the data was split into training (70%), validation(15%), and testing sets(15%). To reduce overfitting, the image data in the training dataset was augmented using transformations frequently used in computer vision, especially in medical multiclass classification tasks. This was achieved using a variety of random geometric and color transformations, as well as random blurring. 
 
 All images, including validation and test images were resized to 224x224 pixel formats, and normalized prior to model training.
 
@@ -36,7 +36,7 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
   </p>
 </a>
 
-## Results
+## Results and Discussion
 
 | Model | Accuracy | Macro F1 | Weighted F1 |
 |------|---------|----------|-------------|
@@ -44,6 +44,12 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
 | ResNet + CBAM | **0.95** | **0.93** | **0.95** |
 
 ### Classification reports for both model architectures: 
+
+As the following classification reports and [fig. 3](#fig3) show, the largest decreases in performance resulting from the absence of CBAM are found in the classification scores for rare classes. The most striking example is the classification of healthy potato leaves, which represent the rarest class in the dataset with only 23 images out of a total of 8146 images in the testing dataset. 
+
+For the classification of healthy potato leaves, the CBAM enabled model achieves a precision of 0.66, recall of 0.91 and a corresponding f1-score of 0.76. These results indicate that the model struggles with false positives for healthy potato leaves, incorrectly predicting this class for images belonging to other classes. Since the recall is fairly high however, the model still correctly identifies most instances of healthy potato leaves and achieves a respectable f1-score even for this rare class.
+
+In contrast, the precision of the ablated model without CBAM drops to 0.22, and its recall grows to a values of 1.00. This results in a fairly poor f1-score of 0.37 and indicates that the false poitives resulting from misclassififcation of images as healthy potato leaves become even more prevalent. This illustrates the capability of CBAM to focus the trained neural network on smaller features in the image data, increasing its ability to discriminate between healthy leaves and leaves with spots indicating illness or different stuctures, indicating a different plant species.
 
 <details>
 <summary><strong> Classification Report, ResNet (no CBAM)</strong></summary>
@@ -151,7 +157,13 @@ The implementations of the ResNet blocks used in this study are shown in [fig. 2
 ```
 </details>
 
-<img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" />
+<a id="fig3">
+  <p align="center">
+    <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" /><br>
+    <em>Figure 3: F1-score differences between the results for the model trained without and with CBAM enabled. Positive y-axis values indicate the CBAM model outperforming the model without CBAM for the respective classification task.</em>
+  </p>
+</a>
+
 
 ## References
 <a id="cbam">[1]</a>
