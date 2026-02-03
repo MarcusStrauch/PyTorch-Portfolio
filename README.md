@@ -159,8 +159,8 @@ Corn(maize) | Cercospora leaf spot Gray leaf spot       0.72      0.87      0.79
 
 <a id="fig3">
   <p align="center">
-    <img width="1153" height="796" alt="Image" src="https://github.com/user-attachments/assets/5f78eda7-1418-4204-9e91-990cd116da3d" /><br>
-    <em>Figure 3: F1-score differences between the results for the model trained without and with CBAM enabled. Positive y-axis values indicate the CBAM model outperforming the model without CBAM for the respective classification task.</em>
+    <img width="1161" height="761" alt="Image" src="https://github.com/user-attachments/assets/ddc25a7b-93c2-44a5-84da-8c3d044c68a2" /><br>
+    <em>Figure 3: F1-score differences between the results for the model trained without and with CBAM enabled. Negative y-axis values indicate the CBAM model outperforming the model without CBAM for the respective classification task.</em>
   </p>
 </a>
 
