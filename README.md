@@ -19,7 +19,7 @@ To perform the ablation study, a shared ResNet model architecture class was esta
 
 ### Overall structure
 
-<a id="fig1">
+<a id="fig1" align="center">
   <p align="center">
     <img width="388" height="774" alt="Image" src="https://github.com/user-attachments/assets/a209964e-f5e7-4370-b960-05df5499bafc" /><br>
     <em>Figure 1: Shared ResNet model architecture with ablation study changes split into two paths.</em>
