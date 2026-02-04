@@ -4,7 +4,7 @@ This project contains an ablation study using a residual neural network architec
 
 ## Technologies Used
 <p align="center">
-  <img width="687" height="196" alt="Image" src="https://github.com/user-attachments/assets/707271be-5d50-49c6-b566-7256d395bba8" />
+  <img width="649" height="174" alt="Image" src="https://github.com/user-attachments/assets/30de0aa3-534e-4c12-aba1-9112c10cf7bb" />
 </p>
 
 ## Image Augmentation and Data Preparation
